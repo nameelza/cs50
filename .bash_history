@@ -167,3 +167,14 @@ cd
 git add .
 git status
 git add git add .bash_history
+git add .bash_history
+git commit -m "first commit"
+git branch main
+git branch
+git checkout main
+git remote add origin https://github.com/nameelza/cs50.git
+git push -u origin main
+git pull
+git push -u origin main
+git checkout master
+git push -u origin master
