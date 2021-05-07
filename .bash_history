@@ -178,3 +178,7 @@ git pull
 git push -u origin main
 git checkout master
 git push -u origin master
+git add .
+git commit -m "population added"
+git push -u origin masterfe
+git push -u origin master
