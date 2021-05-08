@@ -216,3 +216,37 @@ git branch
 cd
 git branch
 git push -u origin master
+git add .
+git rm --cached .local/share/help50/cs50/helpers
+git commit -m "final hello"
+git push -u origin master
+cd
+cd hello
+cd pset1/hello
+cd ..
+cd population
+make population
+./population
+make population
+./population
+make population
+./population
+make population
+./population
+check50 cs50/labs/2021/x/population
+./population
+clear
+./population
+make population
+./population
+check50 cs50/labs/2021/x/population
+style50 population.c
+make population
+style50 population.c
+submit50 cs50/labs/2021/x/population
+make population
+./population
+make population
+./population
+submit50 cs50/labs/2021/x/population
+cd ..
