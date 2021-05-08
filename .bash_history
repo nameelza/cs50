@@ -182,3 +182,37 @@ git add .
 git commit -m "population added"
 git push -u origin masterfe
 git push -u origin master
+git add .
+git commit -m "population added"
+git push -u origin master
+sd
+clear
+dsv
+cd hello
+cd pset1/hello
+make hello
+./hello
+make hello
+cs50 help
+make help
+help 50 make hello
+help50 make hello
+make hello
+./hello
+check50 cs50/problems/2021/x/hello
+style50 hello.c
+make hello
+./hello
+style50 hello.c
+submit50 cs50/problems/2021/x/hello
+git add .
+git commit -m "final hello"
+git push -u origin master
+git pull master
+git pull cs50
+git pull origin master
+git status
+git branch
+cd
+git branch
+git push -u origin master
