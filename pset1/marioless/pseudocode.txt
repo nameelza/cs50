@@ -1,0 +1,3 @@
+Promp user for number from 1-8
+create a variable with this number
+print the pyramid with given number as a height

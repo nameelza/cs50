@@ -250,3 +250,112 @@ make population
 ./population
 submit50 cs50/labs/2021/x/population
 cd ..
+git add .
+git commit -m "Population final"
+git push -u origin master
+~/ $ mkdir ~/pset1/mario
+touch pseudocode.txt
+cd pseit1/mario
+cd pset1/mario
+touch pseudocode.txt
+make mario1
+./mario1
+make mario1
+./mario1
+make mario1
+help50 make mario1
+make mario1h
+make mario1
+./mario1
+make mario1
+./mario1
+make mario1
+./mario1
+make mario1
+./mario1
+make mario1
+./mario1
+make mario1
+./mario1
+make mario1
+cd pset1/mario
+make mario1
+./mario1
+make nario1
+make mario1
+./mario1
+make mario1
+./mario1
+make mario1
+./mario1
+make mario1
+help 50 make mario1
+help50 make mario1
+make mario1
+./mario1
+make mario1
+./mario1
+make mario1
+./mario1
+make mario1
+./mario1
+make mario1
+./mario1
+make mario1
+./mario1
+make mario1
+help50 make mario1
+make mario1
+./mario1
+make mario1
+help50 make mario1
+make mario1
+./mario1
+make mario1
+./mario1
+make mario1
+help50 make mario1
+make mario1
+./mario1
+make mario1
+./mario1
+make mario1
+./mario1
+check50 cs50/problems/2021/x/mario/less
+make mario1
+./mario1
+make mario1
+./mario1
+make mario1
+make mario
+./mario1
+make mario
+./mario1
+make mario
+./mario1
+make mario
+./mario1
+make mario
+./mario1
+make mario
+./mario1
+make mario
+./mario1
+make mario
+./mario1
+make mario
+./mario1
+make mario
+./mario1
+make mario
+./mario1
+make mario
+./mario1
+make mario
+./mario1
+make mario
+./mario1
+./mario
+check50 cs50/problems/2021/x/mario/less
+style50 mario.c
+submit50 cs50/problems/2021/x/mario/less
