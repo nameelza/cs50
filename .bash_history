@@ -481,3 +481,44 @@ style50 mario.c
 make mario
 submit50 cs50/problems/2021/x/mario/more
 cd
+git add .
+git commit -m "mario more"
+git push -u origin master
+clear
+cd pseit1
+cd pset1
+mkdir cash
+cd cash
+touch cash.c
+cd pset1/cash
+make cash
+cd pset1/cash
+make cash
+./cash
+make cash
+./cash
+make cash
+./cash
+make cash
+./cash
+make cash
+help50 make cash
+make cash
+help50 make cash
+make cash
+./cash
+make cash
+./cash
+make cash
+./cash
+make cash
+./cash
+check50 cs50/problems/2021/x/cash
+make cash
+./cash
+make cash
+./cash
+check50 cs50/problems/2021/x/cash
+style50 cash.c
+submit50 cs50/problems/2021/x/cash
+cd
