@@ -1,36 +1,3 @@
-make HelloWorld
-./HelloWorld
-make Helloworld
-make hello
-./hello
-make hello
-./hello
-make hello
-./hello
-make hello
-./hello
-make hello
-./hello
-mkdir week1 lecture
-del lecture
-rem lecture
-rm lecture
-mv week1 week1lecture
-mv hello.c hello week1lecture/
-ls
-cd week1lecture
-ls
-cd ..
-make addition
-addition./
-dc week1lecture
-cd week1lecture
-make addition
-addition./
-./addition
-make truncation
-truncation./
-./tryncation
 ./truncation
 make truncation
 ./truncation
@@ -521,4 +488,125 @@ make cash
 check50 cs50/problems/2021/x/cash
 style50 cash.c
 submit50 cs50/problems/2021/x/cash
+cd
+git add .
+git commit -m "cash final"
+git push -u origin master
+mkdir pset1/credit
+cd pset1/credit
+touch credit.c
+make credit
+./ credit
+./credit
+cd pset1/credit
+make credit
+cd pset1/credit
+make credit
+./credit
+make credit
+./credit
+make credit
+./credit
+make credit
+./credit
+5105105105105100
+./credit
+make credit
+./credit
+make credit
+./credit
+make credit
+./credit
+make credit
+./credit
+make credit
+./credit
+make credit
+./credit
+make credit
+./credit
+make credit
+./credit
+make credit
+./credit
+make credit
+./credit
+check50 cs50/problems/2021/x/credit
+make credit
+./credit
+make credit
+./credit
+make credit
+./credit
+make credit
+./credit
+check50 cs50/problems/2021/x/credit
+make credit
+./credit
+make credit
+./credit
+make credit
+./credit
+make credit
+./credit
+make credit
+./credit
+make credit
+./credit
+make credit
+./credit
+make credit
+./credit
+make credit
+./credit
+make credit
+./credit
+make credit
+./credit
+make credit
+./credit
+check50 cs50/problems/2021/x/credit
+make credit
+./credit
+make credit
+./credit
+make credit
+./credit
+make credit
+./credit
+make credit
+./credit
+make credit
+5555555555554444
+make credit
+./credit
+make credit
+./credit
+make credit
+./credit
+make credit
+./credit
+make credit
+./credit
+make credit
+./credit
+make credit
+./credit
+make credit
+./credit
+make credit
+./credit
+make credit
+./credit
+make credit
+./credit
+make credit
+./credit
+check50 cs50/problems/2021/x/credit
+make credit
+style50 credit.c
+make credit
+style50 credit.c
+submit50 cs50/problems/2021/x/credit
+cs
 cd
