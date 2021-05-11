@@ -616,3 +616,6 @@ make argv2
 ./argv2 my mom
 echo $?
 cd
+git add .
+git commit -m "argc argv"
+git push -u origin master
