@@ -583,3 +583,17 @@ git push -u origin master
 git pull
 git push --force master
 git push --force origin master
+git add .
+git commit -m "test commit"
+git push -u origin master
+cd week2lecture
+make uppercase
+help50 makeuppercase
+help50 make uppercase
+make uppercase
+./uppercase
+make uppercase
+./uppercase
+make uppercase
+./uppercase
+cd
