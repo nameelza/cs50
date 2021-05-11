@@ -514,3 +514,10 @@ git add .
 git commit -m "Scores first"
 git push -u origin master
 cd
+git add .
+git commit -m "Scores first"
+git push -u origin master
+make scores
+cd week2lecture
+make scores
+cd
