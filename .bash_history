@@ -569,3 +569,11 @@ git push -u origin master
 git branch
 git checkout main
 git commit -m "bash"
+git checkout -f master
+git pull
+cd week2lecture
+make string
+./string
+make string
+./string
+cd
