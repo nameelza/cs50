@@ -510,3 +510,7 @@ cd week2lecture
 make scores
 ./scores
 cd
+git add .
+git commit -m "Scores first"
+git push -u origin master
+cd
