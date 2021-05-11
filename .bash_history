@@ -563,3 +563,9 @@ make ASCII_HI
 make ASCII_HI
 ./ASCII_HI
 cd
+git add .
+git commit -m "ASCII final"
+git push -u origin master
+git branch
+git checkout main
+git commit -m "bash"
