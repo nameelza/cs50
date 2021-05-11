@@ -597,3 +597,22 @@ make uppercase
 make uppercase
 ./uppercase
 cd
+git add .
+git commit -m "touppercase"
+git push -u origin master
+clear
+cd week2lecture
+make argv
+./argv bear
+make argv
+./argv bear
+make argv2
+./argv bear
+./argv2 bear
+make argv2
+./argv2 mom
+./argv2 
+./ argv2 my mom
+./argv2 my mom
+echo $?
+cd
