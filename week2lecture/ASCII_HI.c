@@ -8,3 +8,5 @@ int main(void)
     
     printf("%i %i %i\n", c1, c2, c3);
 }
+
+/// output 72 73 33
