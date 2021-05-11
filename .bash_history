@@ -577,3 +577,9 @@ make string
 make string
 ./string
 cd
+git add .
+git commit -m "string array"
+git push -u origin master
+git pull
+git push --force master
+git push --force origin master
