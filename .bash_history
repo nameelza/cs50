@@ -552,3 +552,14 @@ cd
 git add .
 git commit -m "ASCII char hi! to integer"
 git push -u origin master
+git add .
+git commit -m "ASCII char hi! to integer"
+git push -u origin master
+cd week2lecture
+make ASCII_HI
+./ASCII_HI
+make ASCII_HI
+./ASCII_HI
+make ASCII_HI
+./ASCII_HI
+cd
