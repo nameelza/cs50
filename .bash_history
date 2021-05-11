@@ -503,3 +503,10 @@ make functionprototype
 ./ functionprototype
 ./functionprototype
 cd
+git add .
+git commit -m "Function prototype added"
+git push -u origin master
+cd week2lecture
+make scores
+./scores
+cd
