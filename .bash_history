@@ -536,3 +536,16 @@ make scores
 make scores
 ./scores
 cd
+git add .
+git commit -m "Scores final"
+git push -u origin master
+cd week2lecture
+make scores
+./scores
+git add .
+make scores
+./scores
+make ASCII_HI
+./ASCII_HI
+CD
+cd
