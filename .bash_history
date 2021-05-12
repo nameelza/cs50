@@ -1,139 +1,3 @@
-git init
-git add .
-cd pset1
-rm -rf .git
-git rm --cached pset1
-cd
-git rm --cached pset1
-git rm -f  --cached pset1
-git add .
-git add --all
-git add pset1/\*
-git add hello/*
-git add pset1/*
-cd pset1
-git add pset1/*
-git add hello/*
-cd
-git add .
-git status
-git add git add .bash_history
-git add .bash_history
-git commit -m "first commit"
-git branch main
-git branch
-git checkout main
-git remote add origin https://github.com/nameelza/cs50.git
-git push -u origin main
-git pull
-git push -u origin main
-git checkout master
-git push -u origin master
-git add .
-git commit -m "population added"
-git push -u origin masterfe
-git push -u origin master
-git add .
-git commit -m "population added"
-git push -u origin master
-sd
-clear
-dsv
-cd hello
-cd pset1/hello
-make hello
-./hello
-make hello
-cs50 help
-make help
-help 50 make hello
-help50 make hello
-make hello
-./hello
-check50 cs50/problems/2021/x/hello
-style50 hello.c
-make hello
-./hello
-style50 hello.c
-submit50 cs50/problems/2021/x/hello
-git add .
-git commit -m "final hello"
-git push -u origin master
-git pull master
-git pull cs50
-git pull origin master
-git status
-git branch
-cd
-git branch
-git push -u origin master
-git add .
-git rm --cached .local/share/help50/cs50/helpers
-git commit -m "final hello"
-git push -u origin master
-cd
-cd hello
-cd pset1/hello
-cd ..
-cd population
-make population
-./population
-make population
-./population
-make population
-./population
-make population
-./population
-check50 cs50/labs/2021/x/population
-./population
-clear
-./population
-make population
-./population
-check50 cs50/labs/2021/x/population
-style50 population.c
-make population
-style50 population.c
-submit50 cs50/labs/2021/x/population
-make population
-./population
-make population
-./population
-submit50 cs50/labs/2021/x/population
-cd ..
-git add .
-git commit -m "Population final"
-git push -u origin master
-~/ $ mkdir ~/pset1/mario
-touch pseudocode.txt
-cd pseit1/mario
-cd pset1/mario
-touch pseudocode.txt
-make mario1
-./mario1
-make mario1
-./mario1
-make mario1
-help50 make mario1
-make mario1h
-make mario1
-./mario1
-make mario1
-./mario1
-make mario1
-./mario1
-make mario1
-./mario1
-make mario1
-./mario1
-make mario1
-./mario1
-make mario1
-cd pset1/mario
-make mario1
-./mario1
-make nario1
-make mario1
 ./mario1
 make mario1
 ./mario1
@@ -619,3 +483,30 @@ cd
 git add .
 git commit -m "argc argv"
 git push -u origin master
+git add .
+git commit -m "argc argv"
+git push -u origin master
+cd pset2
+make scrabble
+help50 make scrabble
+make scrabble
+help50 make scrabble
+make scrabble
+help50 make scrabble
+make scrabble
+help50 make scrabble
+make scrabble
+./scrabble
+check50 cs50/labs/2021/x/scrabble
+make scrabble
+cd pset2
+make scrabble
+check50 cs50/labs/2021/x/scrabble
+make scrabble
+./scrabble
+clear
+make scrabble
+check50 cs50/labs/2021/x/scrabble
+style50 scrabble.c
+submit50 cs50/labs/2021/x/scrabble
+cd
