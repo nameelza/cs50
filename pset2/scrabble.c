@@ -40,9 +40,9 @@ int compute_score(string word)
     for (int i = 0, len = strlen(word); i < len; i++)
     {
         word[i] = toupper(word[i]);
-        score += POINTS[word[i] - 65];
+        score += POINTS[word[i] - 65]; // or - 'A'/'a'
     }
     return score;
     printf("%i", score);
-        
+
 }

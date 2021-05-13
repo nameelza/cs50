@@ -11,6 +11,9 @@
     "collab": {
         "@timeslider-visible": false
     },
+    "debug": {
+        "@pause": 0
+    },
     "language": {
         "@continuousCompletion": false,
         "@enterCompletion": false
