@@ -564,3 +564,34 @@ cd
 git add .
 git commit -m "readability final"
 git push -u origin master
+git add .
+git commit -m "substitution start"
+git push -u origin master
+cd pset2
+cd substitution
+make substitutiom
+make substitution
+./substitution dg
+make substitution
+./substitution dg
+make substitution
+./substitution ajfkghtjrydhfyturoyudhfjgy
+./substitution dg4
+ehfjgythgjfydhgjfkdhfjgut5
+./substitution ajfkghtjrydhfyturoyudhfjg6
+make substitution
+./substitution ajfkghtjrydhfyturoyudhfjgd
+make substitution
+./substitution ajfkghtjrydhfyturoyudhfjgd
+make substitution
+./substitution ajfkghtjrydhfyturoyudhfjgd
+make substitution
+./substitution ajfkghtjrydhfyturoyudhfjgd
+make substitution
+./substitution ajfkghtjrydhfyturoyudhfjgd
+make substitution
+./substitution ajfkghtjrydhfyturoyudhfjgd
+make substitution
+./substitution VCHPRZGJNTLSKFBDQWAXEUYMOI
+make substitution
+cd 
