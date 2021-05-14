@@ -1,76 +1,3 @@
-Week 2 Arrays
-Week 3 Algorithms
-Week 4 Memory
-Week 5 Data Structures
-Week 6 Python
-Week 7 SQL
-Week 8 HTML, CSS, JavaScript
-Week 9 Flask
-Week 10 Ethics
-Security
-Artificial Intelligence
-Final Project
-Academic Honesty
-CS50 Certificate
-FAQs
-Gradebook
-Staff
-Syllabus
-Ed Discussion for Q&A
-Quick Start Guide
-edX
-YouTube
-CS50 IDE
-CSS Tutorial
-Flask Quickstart
-HTML Tutorial
-Jinja Template Designer Documentation
-Manual Pages
-Python Documentation
-Scratch
-SQL Tutorial
-Style Guide
-Changelog
-Status Page
-Communities
-Discord Q&A
-Ed Q&A
-Facebook Group Q&A
-Facebook Page
-GitHub
-Gitter Q&A
-Instagram
-LinkedIn Group
-LinkedIn Page
-Medium
-Quora
-Reddit Q&A
-Slack Q&A
-Snapchat
-SoundCloud
-Stack Exchange Q&A
-Twitter
-YouTube
-Harvard Shop
-License
-Mario
-World 1-1
-Toward the beginning of World 1-1 in Nintendo’s Super Mario Brothers, Mario must hop over adjacent pyramids of blocks, per the below.
-screenshot of Mario jumping over adjacent pyramids
-Let’s recreate those pyramids in C, albeit in text, using hashes (#) for bricks, a la the below. Each hash is a bit taller than it is wide, so the pyramids themselves are also be taller than they are wide.
-####  ####
-The program we’ll write will be called mario. And let’s allow the user to decide just how tall the pyramids should be by first prompting them for a positive integer between, say, 1 and 8, inclusive.
-Here’s how the program might work if the user inputs 8 when prompted:
-$ ./mario
-Height: 8
-########  ########
-Here’s how the program might work if the user inputs 4 when prompted:
-$ ./mario
-Height: 4
-####  ####
-Here’s how the program might work if the user inputs 2 when prompted:
-$ ./mario
-Height: 2
 ##  ##
 And here’s how the program might work if the user inputs 1 when prompted:
 $ ./mario
@@ -568,3 +495,7 @@ cd
 git add .
 git commit -m "caesar project final"
 git push -u origin master
+git add .
+git commit -m "readability project"
+git push -u origin master
+git add.
