@@ -498,3 +498,19 @@ git add .
 git commit -m "readability project start"
 git push -u origin master
 cd pset2/readability
+git add .
+git commit -m "readability start"
+git push -u origin master
+cd pset2/readability
+make readabilty
+make readability
+./readability
+debug50 ./readabilty
+debug50 ./readability
+make readability
+./readability
+make readability
+./readability
+make readability
+./readability
+cd

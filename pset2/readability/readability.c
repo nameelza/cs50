@@ -6,32 +6,31 @@
 
 int main(void)
 {
-    str text = get_string("Text: ");
-        
-    for (i = 0, n = strlen(text); i < n; i++)
+    string text = get_string("Text: ");
+
+    int l = 0;
+    int w = 1;
+    int s = 0;
+    
+    for (int i = 0, n = strlen(text); i < n; i++)
     {
-        
-        int l = 0;
-        int w = 0;
-        int s = 0;
-        
-        
-        if (isalpha(i))
+        if (isalpha(text[i]))
         {
             l ++;
         }
-        else if (i == " ")
+        else if (text[i] == ' ')
         {
             w ++;
         }
-        else if (i == "." || i == "!" || i == "?")
+        else if (text[i] == '.' || text[i] == '!' || text[i] == '?')
         {
             s ++;
         }
     }
     
-        
-    
+    printf("%i\n%i\n%i\n", l, w, s);
+
+
 }
 
 
