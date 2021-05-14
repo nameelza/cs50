@@ -7,17 +7,31 @@
 int main(void)
 {
     str text = get_string("Text: ");
-    
-    if (isalpha(text))
-    {
-        int sum = 0;
         
-        for (i = 0, n = strlen(text); i < n; i++)
+    for (i = 0, n = strlen(text); i < n; i++)
+    {
+        
+        int l = 0;
+        int w = 0;
+        int s = 0;
+        
+        
+        if (isalpha(i))
         {
-            sum += 1;
+            l ++;
         }
-        printf("%i", sum);
+        else if (i == " ")
+        {
+            w ++;
+        }
+        else if (i == "." || i == "!" || i == "?")
+        {
+            s ++;
+        }
     }
+    
+        
+    
 }
 
 

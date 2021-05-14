@@ -1,8 +1,3 @@
-##  ##
-And here’s how the program might work if the user inputs 1 when prompted:
-$ ./mario
-Height: 1
-#  #
 If the user doesn’t, in fact, input a positive integer between 1 and 8, inclusive, when prompted, the program should re-prompt the user until they cooperate:
 $ ./mario
 Height: -1
@@ -499,3 +494,7 @@ git add .
 git commit -m "readability project"
 git push -u origin master
 git add.
+git add .
+git commit -m "readability project start"
+git push -u origin master
+cd pset2/readability
