@@ -561,3 +561,6 @@ check50 cs50/problems/2021/x/readability
 style50 readability.c
 submit50 cs50/problems/2021/x/readability
 cd
+git add .
+git commit -m "readability final"
+git push -u origin master
