@@ -1,64 +1,3 @@
-./mario1
-make mario1
-./mario1
-make mario1
-help50 make mario1
-make mario1
-./mario1
-make mario1
-./mario1
-make mario1
-./mario1
-check50 cs50/problems/2021/x/mario/less
-make mario1
-./mario1
-make mario1
-./mario1
-make mario1
-make mario
-./mario1
-make mario
-./mario1
-make mario
-./mario1
-make mario
-./mario1
-make mario
-./mario1
-make mario
-./mario1
-make mario
-./mario1
-make mario
-./mario1
-make mario
-./mario1
-make mario
-./mario1
-make mario
-./mario1
-make mario
-./mario1
-make mario
-./mario1
-make mario
-./mario1
-./mario
-check50 cs50/problems/2021/x/mario/less
-style50 mario.c
-submit50 cs50/problems/2021/x/mario/less
-git add .
-git commit -m "Mario less"
-git push -u origin main
-git push -u origin master
-Donate 
-David J. Malan
-malan@harvard.edu
-CS50’s New Year’s Seminars 🥂
-Gallery of Final Projects 🖼️
-What’s new for 2021?
-Week 0 Scratch
-Week 1 C
 Week 2 Arrays
 Week 3 Algorithms
 Week 4 Memory
@@ -549,4 +488,80 @@ make caesar
 ./caesar 3
 ./caesar s
 git add .
+cd
+git add .
+git commit - "caesar project start"
+git commit -m "caesar project start"
+git push -u origin master
+cd pset2/caesar
+./caesar s
+./caesar 3
+make caesar
+./caesar 3
+cd pset2/caesar
+make caesar
+help50 make caesar
+make caesar
+./caesar 3
+./caesar t
+./caesar 2
+debug50 ./caesar
+make caesar
+./caesar 2
+make caesar
+./caesar 2
+make caesar
+./caesar 2
+make caesar
+help50 make caesar
+make caesar
+./caesar 2
+make caesar
+./caesar 2
+make caesar
+./caesar 2
+make caesar
+./caesar 2
+make caesar
+./caesar 2
+make caesar
+./caesar 2
+make caesar
+./caesar 2
+make caesar
+./caesar 2
+make caesar
+./caesar 2
+make caesar
+./caesar 2
+make caesar
+./caesar 2
+make caesar
+./caesar 2
+make caesar
+./caesar 2
+make caesar
+./caesar 2
+make caesar
+./caesar 2
+make caesar
+./caesar 2
+make caesar
+./caesar 2
+make caesar
+./caesar 2
+make caesar
+./caesar 2
+make caesar
+./caesar 2
+make caesar
+./caesar 2
+make caesar
+./caesar 2
+check50 cs50/problems/2021/x/caesar
+make caesar
+./caesar 2
+check50 cs50/problems/2021/x/caesar
+style50 caesar.c
+submit50 cs50/problems/2021/x/caesar
 cd
