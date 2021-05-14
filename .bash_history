@@ -514,3 +514,50 @@ make readability
 make readability
 ./readability
 cd
+git add .
+git commit -m "readability project"
+git push -u origin master
+cd pset2/redability
+cd pset2/readability
+make readability
+./readability
+make readability
+./readability
+make readability
+./readability
+make readability
+./readability
+make readability
+./readability
+make readability
+./readability
+make readability
+./readability
+make readability
+./readability
+make readability
+./readability
+make readability
+./readability
+make readability
+./readability
+make readability
+./readability
+make readability
+./readability
+make readability
+./readability
+make readability
+./readability
+make readability
+./readability
+make readability
+./readability
+make readability
+./readability
+make readability
+./readability
+check50 cs50/problems/2021/x/readability
+style50 readability.c
+submit50 cs50/problems/2021/x/readability
+cd
