@@ -565,3 +565,6 @@ check50 cs50/problems/2021/x/caesar
 style50 caesar.c
 submit50 cs50/problems/2021/x/caesar
 cd
+git add .
+git commit -m "caesar project final"
+git push -u origin master
