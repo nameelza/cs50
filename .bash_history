@@ -1,105 +1,3 @@
-If the user doesn’t, in fact, input a positive integer between 1 and 8, inclusive, when prompted, the program should re-prompt the user until they cooperate:
-$ ./mario
-Height: -1
-Height: 0
-Height: 42
-Height: 50
-Height: 4
-####  ####
-Notice that width of the “gap” between adjacent pyramids is equal to the width of two hashes, irrespective of the pyramids’ heights.
-Create a new directory (i.e., folder) called mario inside of your pset1 directory, by executing
-~/ $ mkdir ~/pset1/mario~/ $ mkdir ~/pset1/mario
-~/ $ mkdir ~/pset1/mario
-cd pset1/mariomore
-touch mario.c
-clear
-make mario
-./mario
-make mario
-./mario
-make mario
-./mario
-make mario
-./mario
-make mario
-./mario
-make mario
-./mario
-check50 cs50/problems/2021/x/mario/more
-style50 mario.c
-make mario
-submit50 cs50/problems/2021/x/mario/more
-cd
-git add .
-git commit -m "mario more"
-git push -u origin master
-clear
-cd pseit1
-cd pset1
-mkdir cash
-cd cash
-touch cash.c
-cd pset1/cash
-make cash
-cd pset1/cash
-make cash
-./cash
-make cash
-./cash
-make cash
-./cash
-make cash
-./cash
-make cash
-help50 make cash
-make cash
-help50 make cash
-make cash
-./cash
-make cash
-./cash
-make cash
-./cash
-make cash
-./cash
-check50 cs50/problems/2021/x/cash
-make cash
-./cash
-make cash
-./cash
-check50 cs50/problems/2021/x/cash
-style50 cash.c
-submit50 cs50/problems/2021/x/cash
-cd
-git add .
-git commit -m "cash final"
-git push -u origin master
-mkdir pset1/credit
-cd pset1/credit
-touch credit.c
-make credit
-./ credit
-./credit
-cd pset1/credit
-make credit
-cd pset1/credit
-make credit
-./credit
-make credit
-./credit
-make credit
-./credit
-make credit
-./credit
-5105105105105100
-./credit
-make credit
-./credit
-make credit
-./credit
-make credit
-./credit
-make credit
 ./credit
 make credit
 ./credit
@@ -595,3 +493,21 @@ make substitution
 ./substitution VCHPRZGJNTLSKFBDQWAXEUYMOI
 make substitution
 cd 
+git add .
+git commit -m "substitution"
+git push -u origin master
+cd pset2/substitution
+make substitution
+cd pset2/substitution
+make substitution
+./substitution VCHPRZGJNTLSKFBDQWAXEUYMOI
+make substitution
+./substitution VCHPRZGJNTLSKFBDQWAXEUYMOI
+make substitution
+./substitution VCHPRZGJNTLSKFBDQWAXEUYMOI
+make substitution
+./substitution VCHPRZGJNTLSKFBDQWAXEUYMOI
+check50 cs50/problems/2021/x/substitution
+style50 substitution.c
+submit50 cs50/problems/2021/x/substitution
+cd

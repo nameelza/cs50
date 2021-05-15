@@ -10,7 +10,7 @@ int main(int argc, string argv[])
     /// Validate key
     if (argc == 2)
     {
-        
+
         for (int i = 0, len = strlen(argv[1]); i < len; i++)
         {
             /// Check for non-alphabetic characters
@@ -26,11 +26,11 @@ int main(int argc, string argv[])
                 return 1;
             }
         }
-        
+
         /// Check for repeated characters (case-insensitive)
         for (int i = 0, n = strlen(argv[1]); i < n - 1; i++)
         {
-            for (int j = i + 1; j < n; j++ )
+            for (int j = i + 1; j < n; j++)
             {
                 if (argv[1][i] == argv[1][j])
                 {
@@ -38,28 +38,42 @@ int main(int argc, string argv[])
                     return 1;
                 }
             }
-        } 
-        return 0;
+        }
     }
     else
     {
         printf("Usage: ./substitution key");
         return 1;
     }
-}
-
-
-
-
-
 
 
 /// Get plaintext
+    string text = get_string("plaintext: ");
+
+    printf("ciphertext: ");
+    string a = argv[1];
 
 /// Encipher
 
 /// For each alphabetic character, determine what letter it maps to
 /// Preserve case
 /// Leave non-alphabetic characters as-is
-
-/// Print ciphertext
+    for (int i = 0, len = strlen(text); i < len; i++)
+    {
+        if (isupper(text[i]))
+        {
+            int number = (text[i] - 65);
+            printf("%c", toupper(a[number]));
+        }
+        else if (islower(text[i]))
+        {
+            int number = (text[i] - 97);
+            printf("%c", tolower(a[number]));
+        }
+        else
+        {
+            printf("%c", text[i]);
+        }
+    }
+    printf("\n");
+}
