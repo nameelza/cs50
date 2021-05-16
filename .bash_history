@@ -1,25 +1,4 @@
 ./credit
-make credit
-./credit
-make credit
-./credit
-make credit
-./credit
-make credit
-./credit
-make credit
-./credit
-make credit
-./credit
-check50 cs50/problems/2021/x/credit
-make credit
-./credit
-make credit
-./credit
-make credit
-./credit
-make credit
-./credit
 check50 cs50/problems/2021/x/credit
 make credit
 ./credit
@@ -511,3 +490,13 @@ check50 cs50/problems/2021/x/substitution
 style50 substitution.c
 submit50 cs50/problems/2021/x/substitution
 cd
+git add .
+git commit -m "substituition final"
+git push -u origin master
+cd week3lecture
+make phonebook
+./phonebook
+make phonebook
+./phonebook
+cd
+git add.
