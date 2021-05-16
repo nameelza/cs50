@@ -1,9 +1,4 @@
 ./credit
-check50 cs50/problems/2021/x/credit
-make credit
-./credit
-make credit
-./credit
 make credit
 ./credit
 make credit
@@ -500,3 +495,28 @@ make phonebook
 ./phonebook
 cd
 git add.
+git add .
+git commit -m "week3lecture"
+git push -u origin master
+wget https://cdn.cs50.net/2020/fall/labs/3/lab3.zip
+unzip lab3.zip
+cd lab3
+./sort1 reversed10000.txt
+time ./sort1 reversed10000.txt
+time ./sort2 reversed10000.txt
+time ./sort3 reversed10000.txt
+time ./sort1 reversed10000.txt
+time ./sort2 reversed10000.txt
+time ./sort3 reversed10000.txt
+time ./sort1 rendom50000.text
+time ./sort1 random50000.txt
+time ./sort2 random50000.txt
+time ./sort3 random50000.txt
+time ./sort1 sorted5000.txt
+time ./sort2 sorted5000.txt
+time ./sort3 sorted5000.txt
+time ./sort3 sorted50000.txt
+time ./sort2 sorted50000.txt
+time ./sort1 sorted50000.txt
+check50 cs50/labs/2021/x/sort
+cd 
