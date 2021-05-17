@@ -7,55 +7,6 @@ make credit
 ./credit
 make credit
 ./credit
-make credit
-./credit
-make credit
-./credit
-make credit
-./credit
-make credit
-./credit
-make credit
-./credit
-make credit
-./credit
-check50 cs50/problems/2021/x/credit
-make credit
-./credit
-make credit
-./credit
-make credit
-./credit
-make credit
-./credit
-make credit
-./credit
-make credit
-5555555555554444
-make credit
-./credit
-make credit
-./credit
-make credit
-./credit
-make credit
-./credit
-make credit
-./credit
-make credit
-./credit
-make credit
-./credit
-make credit
-./credit
-make credit
-./credit
-make credit
-./credit
-make credit
-./credit
-make credit
-./credit
 check50 cs50/problems/2021/x/credit
 make credit
 style50 credit.c
@@ -520,3 +471,52 @@ time ./sort2 sorted50000.txt
 time ./sort1 sorted50000.txt
 check50 cs50/labs/2021/x/sort
 cd 
+git add .
+git commit -m "sorting algorithms"
+commit push -u origin master
+git push -u origin master
+cd pset3
+mkdir plurality
+cd plurality
+wget https://cdn.cs50.net/2020/fall/psets/3/plurality/plurality.c
+ls
+make plurality
+./plurality David Peter Anna Liza Dan
+make plurality
+./plurality David Peter Anna Liza Dan
+make plurality
+./plurality David Peter Anna Liza Dan
+make plurality
+./plurality David Peter Anna Liza Dan
+make plurality
+./plurality David Peter Anna Liza Dan
+make plurality
+./plurality David Peter Anna Liza Dan
+make plurality
+./plurality David Peter Anna Liza Dan
+David
+./plurality David Peter Anna Liza Dan
+David
+make plurality
+cd pset3/plurality
+make plurality
+clear
+./plurality David Peter Anna Liza Dan
+make plurality
+./plurality David Peter Anna Liza Dan
+make plurality
+./plurality David Peter Anna Liza Dan
+make plurality
+./plurality David Peter Anna Liza Dan
+make plurality
+./plurality David Peter Anna Liza Dan
+make plurality
+./plurality David Peter Anna Liza Dan
+make plurality
+check50 cs50/problems/2021/x/plurality
+style50 plurality.c
+make plurality
+style50 plurality.c
+make plurality
+submit50 cs50/problems/2021/x/plurality
+cd
