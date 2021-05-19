@@ -1,40 +1,3 @@
-./credit
-make credit
-./credit
-make credit
-./credit
-make credit
-./credit
-make credit
-./credit
-check50 cs50/problems/2021/x/credit
-make credit
-style50 credit.c
-make credit
-style50 credit.c
-submit50 cs50/problems/2021/x/credit
-cs
-cd
-git add .
-git commit -m "credit final"
-git push -u origin master
-clear
-cd week2lecture
-make functionprototype
-./ functionprototype
-./functionprototype
-cd
-git add .
-git commit -m "Function prototype added"
-git push -u origin master
-cd week2lecture
-make scores
-./scores
-cd
-git add .
-git commit -m "Scores first"
-git push -u origin master
-cd
 git add .
 git commit -m "Scores first"
 git push -u origin master
@@ -519,4 +482,32 @@ make plurality
 style50 plurality.c
 make plurality
 submit50 cs50/problems/2021/x/plurality
+cd
+git add .
+git commit -m "Plurality final"
+git push -u origin master
+cd pset3
+mkdir runoff
+cd runoff
+wget https://cdn.cs50.net/2020/fall/psets/3/runoff/runoff.c
+ls
+cd pset3/runoff
+make runoff
+./ string
+./string
+./runoff ALice Bob Anna 
+./runoff Alice Bob Anna
+make runoff
+cd pset3/runoff
+make runoff
+help50 make runoff
+make runoff
+./runoff Alice Bob Anna
+make runoff
+./runoff Alice Bob Anna
+clear
+make runoff
+./runoff Alice Bob Anna
+clear
+cs
 cd
