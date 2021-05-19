@@ -1,22 +1,3 @@
-git add .
-git commit -m "Scores first"
-git push -u origin master
-make scores
-cd week2lecture
-make scores
-cd
-git add .
-git commit -m "Scores first"
-git push -u origin master
-cd week2lecture
-make scores
-help50 make scores
-make scores
-help50 make scores
-make scores
-./scores
-make scores
-./scores
 make scores
 ./scores
 cd
@@ -511,3 +492,9 @@ make runoff
 clear
 cs
 cd
+git add .
+git commit -m "runoff start"
+git push -u origin master
+cd pset3
+cd runoff
+clear
