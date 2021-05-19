@@ -513,3 +513,33 @@ make runoff
 ./runoff Alice Bob Anna
 make runoff
 cd 
+git add .
+git commit -m "runoff"
+git push -u origin master
+cd pset3
+cd runoff
+clear
+make runoff
+clear
+make runoff
+check50 cs50/problems/2021/x/runoff
+make runoff
+help50 make runoff
+make runoff
+check50 cs50/problems/2021/x/runoff
+make runoff
+check50 cs50/problems/2021/x/runoff
+make runoff
+check50 cs50/problems/2021/x/runoff
+make runoff
+check50 cs50/problems/2021/x/runoff
+make runoff
+clear
+check50 cs50/problems/2021/x/runoff
+make runoff
+check50 cs50/problems/2021/x/runoff
+make runoff
+check50 cs50/problems/2021/x/runoff
+style50 runoff.c
+submit50 cs50/problems/2021/x/runoff
+cd
