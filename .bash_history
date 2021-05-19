@@ -498,3 +498,18 @@ git push -u origin master
 cd pset3
 cd runoff
 clear
+git add .
+git commit -m "runoff"
+git push -u origin master
+cd pset3
+cd runoff
+make runoff
+clear
+make runoff
+clear
+make runoff
+clear
+make runoff
+./runoff Alice Bob Anna
+make runoff
+cd 

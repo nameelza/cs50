@@ -134,25 +134,39 @@ bool vote(int voter, int rank, string name)
     {
         if (strcmp(name, candidates[i].name) == 0)
         {
-            preferences[voter][rank] = candidates[i].name;
+            preferences[voter][rank] = i;
             return true;
         }
     }
-    
     return false;
 }
 
 // Tabulate votes for non-eliminated candidates
 void tabulate(void)
 {
-    // TODO
-    return;
+    for (int i = 0; i < voter_count; i++)
+    {
+        for (int j = 0; j < candidate_count; j++)
+        {
+            if (candidates[preferences[i][j]].eliminated == false)
+            {
+                candidates[preferences[i][j]].votes ++;
+            }
+        }
+    }
 }
 
 // Print the winner of the election, if there is one
 bool print_winner(void)
 {
-    // TODO
+    for (int i = 0; i < voter_count; i++)
+    {
+        if (candidates[i].votes > (candidate_count / 2))
+        {
+            printf("%s", candidates[i].name);
+            return true;
+        }
+    }
     return false;
 }
 
