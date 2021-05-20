@@ -3,7 +3,7 @@
 #include <string.h>
 
 // Max number of candidates
-const int MAX = 9;
+#define MAX 9
 
 // Candidates have name and vote count
 typedef struct

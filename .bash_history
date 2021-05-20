@@ -1,66 +1,3 @@
-make scores
-./scores
-cd
-git add .
-git commit -m "Scores final"
-git push -u origin master
-cd week2lecture
-make scores
-./scores
-git add .
-make scores
-./scores
-make ASCII_HI
-./ASCII_HI
-CD
-cd
-git add .
-git commit -m "ASCII char hi! to integer"
-git push -u origin master
-git add .
-git commit -m "ASCII char hi! to integer"
-git push -u origin master
-cd week2lecture
-make ASCII_HI
-./ASCII_HI
-make ASCII_HI
-./ASCII_HI
-make ASCII_HI
-./ASCII_HI
-cd
-git add .
-git commit -m "ASCII final"
-git push -u origin master
-git branch
-git checkout main
-git commit -m "bash"
-git checkout -f master
-git pull
-cd week2lecture
-make string
-./string
-make string
-./string
-cd
-git add .
-git commit -m "string array"
-git push -u origin master
-git pull
-git push --force master
-git push --force origin master
-git add .
-git commit -m "test commit"
-git push -u origin master
-cd week2lecture
-make uppercase
-help50 makeuppercase
-help50 make uppercase
-make uppercase
-./uppercase
-make uppercase
-./uppercase
-make uppercase
-./uppercase
 cd
 git add .
 git commit -m "touppercase"
@@ -542,4 +479,23 @@ make runoff
 check50 cs50/problems/2021/x/runoff
 style50 runoff.c
 submit50 cs50/problems/2021/x/runoff
+cd
+git add .
+git commit -m "runoff final"
+git push -u origin master
+cd pset3
+mkdir tideman
+cd tideman
+wget https://cdn.cs50.net/2020/fall/psets/3/tideman/tideman.c
+cd pset3/plurality
+make pluralitu
+make plurality
+clear
+cd pset3
+cd pset3/tideman
+cd
+cd pset3
+cd tideman
+mkdir week4lecture
+cd week4lecture
 cd
