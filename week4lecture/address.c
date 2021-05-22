@@ -8,5 +8,5 @@ int main(void)
 }
 
 /// & - what adress the variable is at
-/// * - go to the following adsress
+/// * - go to the following address
 /// %p for addresses (pointers store the address)

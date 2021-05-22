@@ -516,3 +516,19 @@ make address
 make address
 ./address
 cd
+git add .
+git commit -m "address"
+git push -u origin master
+make address
+cd week4lecture
+make address
+./address
+make address2
+./address2
+make address2
+./address2
+make address2
+./address2
+make address2
+./address2
+cd
