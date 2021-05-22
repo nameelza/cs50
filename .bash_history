@@ -505,3 +505,14 @@ make address
 make address
 ./address
 cd
+git add .
+git commit -m "address"
+git push -u origin master
+cd week4lecture
+make address
+./address
+make address
+./address
+make address
+./address
+cd

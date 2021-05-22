@@ -3,9 +3,10 @@
 int main(void)
 {
     int n = 50;
-    printf("%i\n", *&n);
+    int *p = &n;
+    printf("%i\n", *p);
 }
 
 /// & - what adress the variable is at
 /// * - go to the following adsress
-/// %p for addressed
+/// %p for addresses (pointers store the address)
