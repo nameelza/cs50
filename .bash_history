@@ -1,11 +1,3 @@
-cd
-git add .
-git commit -m "touppercase"
-git push -u origin master
-clear
-cd week2lecture
-make argv
-./argv bear
 make argv
 ./argv bear
 make argv2
@@ -498,4 +490,18 @@ cd pset3
 cd tideman
 mkdir week4lecture
 cd week4lecture
+cd
+git add .
+git commit -m "lecture"
+git push -u origin master
+cd pset3
+cd lab3
+submit50 cs50/labs/2021/x/sort
+clear
+cd week4lecture
+make adress
+make address
+./address
+make address
+./address
 cd
