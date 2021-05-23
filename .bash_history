@@ -1,42 +1,3 @@
-make argv
-./argv bear
-make argv2
-./argv bear
-./argv2 bear
-make argv2
-./argv2 mom
-./argv2 
-./ argv2 my mom
-./argv2 my mom
-echo $?
-cd
-git add .
-git commit -m "argc argv"
-git push -u origin master
-git add .
-git commit -m "argc argv"
-git push -u origin master
-cd pset2
-make scrabble
-help50 make scrabble
-make scrabble
-help50 make scrabble
-make scrabble
-help50 make scrabble
-make scrabble
-help50 make scrabble
-make scrabble
-./scrabble
-check50 cs50/labs/2021/x/scrabble
-make scrabble
-cd pset2
-make scrabble
-check50 cs50/labs/2021/x/scrabble
-make scrabble
-./scrabble
-clear
-make scrabble
-check50 cs50/labs/2021/x/scrabble
 style50 scrabble.c
 submit50 cs50/labs/2021/x/scrabble
 cd
@@ -531,4 +492,13 @@ make address2
 ./address2
 make address2
 ./address2
+cd
+git add .
+git commit -m "address2"
+git push -u origin master
+cd week4lecture
+make address2
+cd week4lecture
+make compare
+./compare
 cd
