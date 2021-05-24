@@ -1,10 +1,3 @@
-style50 scrabble.c
-submit50 cs50/labs/2021/x/scrabble
-cd
-git add .
-git commit -m "scrabble project"
-git push -u origin master
-cd pset2/caesar
 make caesar
 ./caesar 4 5
 make caesar
@@ -502,3 +495,6 @@ cd week4lecture
 make compare
 ./compare
 cd
+git add .
+git commit -m "compare"
+git push -u origin master
