@@ -1,6 +1,3 @@
-make caesar
-./caesar 4 5
-make caesar
 ./caesar 4
 make caesar
 ./caesar 4
@@ -498,3 +495,13 @@ cd
 git add .
 git commit -m "compare"
 git push -u origin master
+git add .
+git commit -m "copy"
+git push -u origin master
+cd week4lecture
+make copy
+./copy
+make copy
+./copy
+make copy
+cd
