@@ -505,3 +505,16 @@ make copy
 ./copy
 make copy
 cd
+git add .
+git commit -m "copy"
+git push -u origin master
+cd week4lecture
+make copy
+./copy
+make copy
+./copy
+git add .
+git commit -m "copy"
+git push -u origin master
+make copy
+cd 
