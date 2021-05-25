@@ -1,15 +1,3 @@
-debug50 ./caesar 5
-make caesar
-debug50 ./caesar 5
-make caesar
-./caesar 3
-make caesar
-./caesar 3
-make caesar
-./caesar 3
-make caesar
-./caesar 3
-./caesar s
 git add .
 cd
 git add .
@@ -506,3 +494,8 @@ make phonebook
 make phonebook
 ./phonebook
 cd
+git add .
+git commit -m "phonebook"
+got push -u origin master
+git push -u origin master
+git add .
