@@ -1,49 +1,3 @@
-./caesar 4
-make caesar
-./caesar 4
-make caesar
-./caesar 4
-./caesar r
-make caesar
-./caesar r
-cd pset2/caesar
-make caesar
-make caesar 3
-help50 make caesar
-make caesar 3
-help50 make caesar
-make caesar 3
-./caesar 3
-make caesar
-help50 make caesar
-make caesar
-./caesar 3
-make caesar
-./caesar 3
-make caesar
-./caesar 3
-make caesar
-./caesar 3
-make caesar
-./caesar 3
-make caesar
-./caesar 3
-make caesar
-./caesar 3
-make caesar
-./caesar 3
-make caesar
-./caesar 3
-make caesar
-./caesar 3
-make caesar
-./caesar 3
-make caesar
-./caesar 3
-make caesar
-./caesar 3
-make caesar
-./caesar 3
 debug50 ./caesar 5
 make caesar
 debug50 ./caesar 5
@@ -541,3 +495,14 @@ cd
 git add .
 git commit -m "swap"
 git commit -m "mario"
+git add .
+git commit -m "mario"
+git push -u origin master
+cd week4lecture
+make scanf
+./scanf
+make phonebook
+./phonebook
+make phonebook
+./phonebook
+cd
