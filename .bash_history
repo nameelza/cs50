@@ -1,15 +1,3 @@
-git add .
-cd
-git add .
-git commit - "caesar project start"
-git commit -m "caesar project start"
-git push -u origin master
-cd pset2/caesar
-./caesar s
-./caesar 3
-make caesar
-./caesar 3
-cd pset2/caesar
 make caesar
 help50 make caesar
 make caesar
@@ -506,4 +494,16 @@ cd pset4
 wget https://cdn.cs50.net/2020/fall/labs/4/lab4.zip
 unzip lab4.zip
 cd lab4
+cd
+git add .
+git commit -m "lab4"
+git push -u origin master
+cd pdet4/lab4
+cd pset4/lab4
+make volume
+./volume input.wav output.wav 0.5
+check50 cs50/labs/2021/x/volume
+./volume input.wav output.wav 2.0
+make volume
+./volume input.wav output.wav 2.0
 cd
