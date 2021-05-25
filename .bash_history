@@ -538,3 +538,6 @@ make mario
 make mario
 ./mario
 cd
+git add .
+git commit -m "swap"
+git commit -m "mario"
