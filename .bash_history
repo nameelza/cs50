@@ -525,3 +525,16 @@ cd week4lecture
 make swap
 ./swap
 cd
+git add .
+git commit -m "swap
+git commit -m "swap"
+git commit -m "swap"
+git push -u origin master
+cd week4lecture
+make mario
+./mario
+make mario
+./mario
+make mario
+./mario
+cd
