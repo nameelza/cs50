@@ -499,3 +499,11 @@ git commit -m "phonebook"
 got push -u origin master
 git push -u origin master
 git add .
+git commit -m "phonebook"
+git push -u origin master
+mkdir pset4
+cd pset4
+wget https://cdn.cs50.net/2020/fall/labs/4/lab4.zip
+unzip lab4.zip
+cd lab4
+cd
