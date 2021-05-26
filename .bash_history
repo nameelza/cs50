@@ -1,47 +1,3 @@
-make caesar
-help50 make caesar
-make caesar
-./caesar 3
-./caesar t
-./caesar 2
-debug50 ./caesar
-make caesar
-./caesar 2
-make caesar
-./caesar 2
-make caesar
-./caesar 2
-make caesar
-help50 make caesar
-make caesar
-./caesar 2
-make caesar
-./caesar 2
-make caesar
-./caesar 2
-make caesar
-./caesar 2
-make caesar
-./caesar 2
-make caesar
-./caesar 2
-make caesar
-./caesar 2
-make caesar
-./caesar 2
-make caesar
-./caesar 2
-make caesar
-./caesar 2
-make caesar
-./caesar 2
-make caesar
-./caesar 2
-make caesar
-./caesar 2
-make caesar
-./caesar 2
-make caesar
 ./caesar 2
 make caesar
 ./caesar 2
@@ -507,3 +463,38 @@ check50 cs50/labs/2021/x/volume
 make volume
 ./volume input.wav output.wav 2.0
 cd
+git add .
+git commit -m "lab4 volume"
+git push -u origin master
+cd pset4/lab4
+style50 volume.c
+submit50 cs50/labs/2021/x/volume
+cd ..
+mkdir filter1
+cd filter1
+wget https://cdn.cs50.net/2020/fall/psets/4/filter/less/filter.zip
+unzip filter.zip
+cd filter
+ls
+make filter
+./filter -g infile.bmp outfile.bmp
+cd ..
+cd filter
+make filter
+./filter -g infile.bmp outfile.bmp
+./filter -g images/yard.bmp out.bmp
+make filter
+./filter -s images/yard.bmp out.bmp
+make filter
+./filter -r images/yard.bmp out.bmp
+make filter
+./filter -r images/yard.bmp out.bmp
+make filter
+./filter -r images/yard.bmp out.bmp
+make filter
+./filter -r images/yard.bmp out.bmp
+check50 cs50/problems/2021/x/filter/less
+make filter
+check50 cs50/problems/2021/x/filter/less
+make filter
+check50 cs50/problems/2021/x/filter/less
