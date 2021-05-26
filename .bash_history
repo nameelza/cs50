@@ -562,3 +562,14 @@ make filter
 style50 helpers.c
 submit50 cs50/problems/2021/x/filter/less
 cd
+git add .
+git commit -m "filter less final"
+git push -u origin master
+cd pset4
+wget http://cdn.cs50.net/2020/fall/psets/4/recover/recover.zip
+unzip recover.zip
+cd recover
+ls
+clear
+make recover
+cd
