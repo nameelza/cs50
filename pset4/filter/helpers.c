@@ -112,7 +112,7 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
                 }
 
             // bottom right
-            if (i < width && j+1 < width)
+            if (i+1 < height && j+1 < width)
                 {
                     sumRed += temp[i+1][j+1].rgbtRed;
                     sumGreen += temp[i+1][j+1].rgbtGreen;
@@ -167,7 +167,7 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
                     counter++;
                 }
 
-            // left
+            // // left
             if (j > 0)
                 {
                     sumRed += temp[i][j-1].rgbtRed;
@@ -184,9 +184,115 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
             counter++;
 
             // count average for each pixel
-            image[i][j].rgbtRed = round(sumRed/counter);
-            image[i][j].rgbtGreen = round(sumGreen/counter);
-            image[i][j].rgbtBlue = round(sumBlue/counter);
+            image[i][j].rgbtRed = round(sumRed / counter);
+            image[i][j].rgbtGreen = round(sumGreen / counter);
+            image[i][j].rgbtBlue = round(sumBlue / counter);
         }
     }
 }
+
+
+
+
+
+//     RGBTRIPLE temp[height][width];
+//     for (int i = 0; i < height; i++)
+//     {
+//         for (int j = 0; j < width; j++)
+//         {
+//             temp[i][j] = image[i][j];
+//         }
+//     }
+
+//     for (int i = 0; i < height; i++)
+//     {
+//         for (int j = 0; j < width; j++)
+//         {
+//             int sum_blue;
+//             int sum_green;
+//             int sum_red;
+//             float counter;
+//             sum_blue = sum_green = sum_red = counter = 0;
+// //CORNERS
+//             //corner pixel on bottom right
+//             if (i >= 0 && j >= 0)
+//             {
+//                 sum_red += temp[i][j].rgbtRed;
+//                 sum_green += temp[i][j].rgbtGreen;
+//                 sum_blue += temp[i][j].rgbtBlue;
+//                 counter++;
+//             }
+//             //corner pixel on bottom left
+//             if (i >= 0 && j - 1 >= 0)
+//             {
+//                 sum_red += temp[i][j-1].rgbtRed;
+//                 sum_green += temp[i][j-1].rgbtGreen;
+//                 sum_blue += temp[i][j-1].rgbtBlue;
+//                 counter++;
+//             }
+//             //corner pixel on top left
+//             if (i - 1 >= 0 && j >= 0)
+//             {
+//                 sum_red += temp[i-1][j].rgbtRed;
+//                 sum_green += temp[i-1][j].rgbtGreen;
+//                 sum_blue += temp[i-1][j].rgbtBlue;
+//                 counter++;
+//             }
+//             //corner pixel on top right
+//             if (i - 1 >= 0 && j - 1 >= 0)
+//             {
+//                 sum_red += temp[i-1][j-1].rgbtRed;
+//                 sum_green += temp[i-1][j-1].rgbtGreen;
+//                 sum_blue += temp[i-1][j-1].rgbtBlue;
+//                 counter++;
+//             }
+// //FOUR EDGES
+//             //pixels on bottom edge
+//             if ((i >= 0 && j + 1 >= 0) && (i >= 0 && j + 1 < width))
+//             {
+//                 sum_red += temp[i][j+1].rgbtRed;
+//                 sum_green += temp[i][j+1].rgbtGreen;
+//                 sum_blue += temp[i][j+1].rgbtBlue;
+//                 counter++;
+//             }
+//             //pixels on top edge
+//             if ((i - 1 >= 0 && j + 1 >= 0) && (i - 1 >= 0 && j + 1 < width))
+//             {
+//                 sum_red += temp[i-1][j+1].rgbtRed;
+//                 sum_green += temp[i-1][j+1].rgbtGreen;
+//                 sum_blue += temp[i-1][j+1].rgbtBlue;
+//                 counter++;
+//             }
+//             //pixels on left edge
+//             if ((i + 1 >= 0 && j >= 0) && (i + 1 < height && j >= 0))
+//             {
+//                 sum_red += temp[i+1][j].rgbtRed;
+//                 sum_green += temp[i+1][j].rgbtGreen;
+//                 sum_blue += temp[i+1][j].rgbtBlue;
+//                 counter++;
+//             }
+//             //pixels on right edge
+//             if ((i + 1 >= 0 && j - 1 >= 0) && (i + 1 < height && j - 1 >= 0))
+//             {
+//                 sum_red += temp[i+1][j-1].rgbtRed;
+//                 sum_green += temp[i+1][j-1].rgbtGreen;
+//                 sum_blue += temp[i+1][j-1].rgbtBlue;
+//                 counter++;
+//             }
+// //MIDDLE PIXELS
+//             //middle pixels
+//             if ((i + 1 >= 0 && j + 1 >= 0) && (i + 1 < height && j + 1 < width))
+//             {
+//                 sum_red += temp[i+1][j+1].rgbtRed;
+//                 sum_green += temp[i+1][j+1].rgbtGreen;
+//                 sum_blue += temp[i+1][j+1].rgbtBlue;
+//                 counter++;
+//             }
+//             //find average colour value
+//             image[i][j].rgbtRed = round(sum_red / counter);
+//             image[i][j].rgbtGreen = round(sum_green / counter);
+//             image[i][j].rgbtBlue = round(sum_blue / counter);
+//         }
+//     }
+// return;
+// }

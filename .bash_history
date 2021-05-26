@@ -538,3 +538,15 @@ check50 cs50/problems/2021/x/filter/less
 make filter
 check50 cs50/problems/2021/x/filter/less
 cd
+git add .
+git commit -m "filter less"
+git push -u origin master
+make filter
+cd pset4/filter
+make filter
+check50 cs50/problems/2021/x/filter/less
+make filter
+check50 cs50/problems/2021/x/filter/less
+make filter
+check50 cs50/problems/2021/x/filter/less
+cd
