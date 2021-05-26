@@ -9,7 +9,7 @@ void grayscale(int height, int width, RGBTRIPLE image[height][width])
     {
         for (int j = 0; j < width; j++)
         {
-            int average = round((image[i][j].rgbtRed + image[i][j].rgbtGreen + image[i][j].rgbtBlue)/3.0);
+            int average = round((image[i][j].rgbtRed + image[i][j].rgbtGreen + image[i][j].rgbtBlue) / 3.0);
             image[i][j].rgbtRed = image[i][j].rgbtGreen = image[i][j].rgbtBlue = average;
         }
     }
@@ -65,7 +65,7 @@ void reflect(int height, int width, RGBTRIPLE image[height][width])
 {
     for (int i = 0; i < height; i++)
     {
-        for (int j = 0; j < (width/2); j++)
+        for (int j = 0; j < (width / 2); j++)
         {
             RGBTRIPLE temp = image[i][j];
             image[i][j] = image[i][width - (j + 1)];
@@ -100,90 +100,91 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
 
             sumRed = sumGreen = sumBlue = counter = 0;
 
-    // CHECK CORNERS
+            // ADD CORNERS
 
             // top right
-            if (i > 0 && j+1 < width)
-                {
-                    sumRed += temp[i-1][j+1].rgbtRed;
-                    sumGreen += temp[i-1][j+1].rgbtGreen;
-                    sumBlue += temp[i-1][j+1].rgbtBlue;
-                    counter++;
-                }
+            if (i > 0 && j + 1 < width)
+            {
+                sumRed += temp[i - 1][j + 1].rgbtRed;
+                sumGreen += temp[i - 1][j + 1].rgbtGreen;
+                sumBlue += temp[i - 1][j + 1].rgbtBlue;
+                counter++;
+            }
 
             // bottom right
-            if (i+1 < height && j+1 < width)
-                {
-                    sumRed += temp[i+1][j+1].rgbtRed;
-                    sumGreen += temp[i+1][j+1].rgbtGreen;
-                    sumBlue += temp[i+1][j+1].rgbtBlue;
-                    counter++;
-                }
+            if (i + 1 < height && j + 1 < width)
+            {
+                sumRed += temp[i + 1][j + 1].rgbtRed;
+                sumGreen += temp[i + 1][j + 1].rgbtGreen;
+                sumBlue += temp[i + 1][j + 1].rgbtBlue;
+                counter++;
+            }
 
             // top left
             if (i > 0 && j > 0)
-                {
-                    sumRed += temp[i-1][j-1].rgbtRed;
-                    sumGreen += temp[i-1][j-1].rgbtGreen;
-                    sumBlue += temp[i-1][j-1].rgbtBlue;
-                    counter++;
-                }
+            {
+                sumRed += temp[i - 1][j - 1].rgbtRed;
+                sumGreen += temp[i - 1][j - 1].rgbtGreen;
+                sumBlue += temp[i - 1][j - 1].rgbtBlue;
+                counter++;
+            }
 
             // bottom left
-            if (i+1 < height && j > 0)
-                {
-                    sumRed += temp[i+1][j-1].rgbtRed;
-                    sumGreen += temp[i+1][j-1].rgbtGreen;
-                    sumBlue += temp[i+1][j-1].rgbtBlue;
-                    counter++;
-                }
+            if (i + 1 < height && j > 0)
+            {
+                sumRed += temp[i + 1][j - 1].rgbtRed;
+                sumGreen += temp[i + 1][j - 1].rgbtGreen;
+                sumBlue += temp[i + 1][j - 1].rgbtBlue;
+                counter++;
+            }
 
-    // CHECK SIDES
+
+            // ADD SIDES
 
             // top
             if (i > 0)
-                {
-                    sumRed += temp[i-1][j].rgbtRed;
-                    sumGreen += temp[i-1][j].rgbtGreen;
-                    sumBlue += temp[i-1][j].rgbtBlue;
-                    counter++;
-                }
+            {
+                sumRed += temp[i - 1][j].rgbtRed;
+                sumGreen += temp[i - 1][j].rgbtGreen;
+                sumBlue += temp[i - 1][j].rgbtBlue;
+                counter++;
+            }
 
             // bottom
-            if (i+1 < height)
-                {
-                    sumRed += temp[i+1][j].rgbtRed;
-                    sumGreen += temp[i+1][j].rgbtGreen;
-                    sumBlue += temp[i+1][j].rgbtBlue;
-                    counter++;
-                }
+            if (i + 1 < height)
+            {
+                sumRed += temp[i + 1][j].rgbtRed;
+                sumGreen += temp[i + 1][j].rgbtGreen;
+                sumBlue += temp[i + 1][j].rgbtBlue;
+                counter++;
+            }
 
             // right
-            if (j+1 < width)
-                {
-                    sumRed += temp[i][j+1].rgbtRed;
-                    sumGreen += temp[i][j+1].rgbtGreen;
-                    sumBlue += temp[i][j+1].rgbtBlue;
-                    counter++;
-                }
+            if (j + 1 < width)
+            {
+                sumRed += temp[i][j + 1].rgbtRed;
+                sumGreen += temp[i][j + 1].rgbtGreen;
+                sumBlue += temp[i][j + 1].rgbtBlue;
+                counter++;
+            }
 
-            // // left
+            // left
             if (j > 0)
-                {
-                    sumRed += temp[i][j-1].rgbtRed;
-                    sumGreen += temp[i][j-1].rgbtGreen;
-                    sumBlue += temp[i][j-1].rgbtBlue;
-                    counter++;
-                }
+            {
+                sumRed += temp[i][j - 1].rgbtRed;
+                sumGreen += temp[i][j - 1].rgbtGreen;
+                sumBlue += temp[i][j - 1].rgbtBlue;
+                counter++;
+            }
 
-    // ADD MIDDLE
+            // ADD MIDDLE
 
             sumRed += temp[i][j].rgbtRed;
             sumGreen += temp[i][j].rgbtGreen;
             sumBlue += temp[i][j].rgbtBlue;
             counter++;
 
-            // count average for each pixel
+            // count average for each pixel and assign it to the original image
             image[i][j].rgbtRed = round(sumRed / counter);
             image[i][j].rgbtGreen = round(sumGreen / counter);
             image[i][j].rgbtBlue = round(sumBlue / counter);
