@@ -97,20 +97,96 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
     // CHECK CORNERS
 
             // top right
-            if (i >= 0 && j <= width)
+            if (i > 0 && j < width)
                 {
                     sumRed += RGBTRIPLE temp[i-1][j+1];
                     sumGreen += RGBTRIPLE temp[i-1][j+1];
                     sumBlue += RGBTRIPLE temp[i-1][j+1];
+                    counter++;
                 }
 
             // bottom right
+            if (i < width && j < width)
+                {
+                    sumRed += RGBTRIPLE temp[i+1][j+1];
+                    sumGreen += RGBTRIPLE temp[i+1][j+1];
+                    sumBlue += RGBTRIPLE temp[i+1][j+1];
+                    counter++;
+                }
+            
+            // top left
+            if (i > 0 && j > 0)
+                {
+                    sumRed += RGBTRIPLE temp[i-1][j-1];
+                    sumGreen += RGBTRIPLE temp[i-1][j-1];
+                    sumBlue += RGBTRIPLE temp[i-1][j-1];
+                    counter++;
+                }
+                
+            // bottom left
+            if (i < height && j > 0)
+                {
+                    sumRed += RGBTRIPLE temp[i+1[j-1];
+                    sumGreen += RGBTRIPLE temp[i+1][j-1];
+                    sumBlue += RGBTRIPLE temp[i+1][j-1];
+                    counter++;
+                }
+                
+    // CHECK SIDES
+            
+            // top
+            if (i > 0)
+                {
+                    sumRed += RGBTRIPLE temp[i-1[j];
+                    sumGreen += RGBTRIPLE temp[i-1][j];
+                    sumBlue += RGBTRIPLE temp[i-1][j];
+                    counter++;
+                }
+            
+            // bottom
+            if (i < height)
+                {
+                    sumRed += RGBTRIPLE temp[i+1[j];
+                    sumGreen += RGBTRIPLE temp[i+1][j];
+                    sumBlue += RGBTRIPLE temp[i+1][j];
+                    counter++;
+                }
+                
+            // right
+            if (j < width)
+                {
+                    sumRed += RGBTRIPLE temp[i][j+1];
+                    sumGreen += RGBTRIPLE temp[i][j+1];
+                    sumBlue += RGBTRIPLE temp[i][j+1];
+                    counter++;
+                }
+                
+            // left
+            if (j > 0)
+                {
+                    sumRed += RGBTRIPLE temp[i][j-1];
+                    sumGreen += RGBTRIPLE temp[i][j-1];
+                    sumBlue += RGBTRIPLE temp[i][j-1];
+                    counter++;
+                }
 
-
-
-
+    // ADD MIDDLE
+            
+            sumRed += RGBTRIPLE temp[i][j];
+            sumGreen += RGBTRIPLE temp[i][j];
+            sumBlue += RGBTRIPLE temp[i][j];
+            counter++;
+            
+            // count average for each pixel
+            temp[i][j].rgbtRed = round(sumRed/counter);
+            temp[i][j].rgbtGreen = round(sumGreen/counter);
+            temp[i][j].rgbtBlue = round(sumBlue/counter);
+            
         }
     }
 
-
+    
+    // 
+    
+    
 }
