@@ -504,3 +504,37 @@ git push -u origin master
 git add .
 git commit -m "filter blur"
 git push -u origin master
+git add .
+git commit -m "filter blur"
+git push -u origin master
+cd pset4
+cd filter
+make filter
+help50 make filter
+make filter
+help50 make filter
+make filter
+check50 cs50/problems/2021/x/filter/less
+make filter
+check50 cs50/problems/2021/x/filter/less
+make filter
+check50 cs50/problems/2021/x/filter/less
+make filter
+check50 cs50/problems/2021/x/filter/less
+make filter
+check50 cs50/problems/2021/x/filter/less
+make filter
+./filter -b images/yard.bmp out.bmp
+make filter
+check50 cs50/problems/2021/x/filter/less
+make filter
+check50 cs50/problems/2021/x/filter/less
+make filter
+check50 cs50/problems/2021/x/filter/less
+make filter
+check50 cs50/problems/2021/x/filter/less
+make filter
+check50 cs50/problems/2021/x/filter/less
+make filter
+check50 cs50/problems/2021/x/filter/less
+cd
