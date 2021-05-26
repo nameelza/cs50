@@ -85,7 +85,32 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
             RGBTRIPLE temp[i][j] = RGBTRIPLE image[i][j];
         }
     }
-    
-    
-    
+
+
+    for (i = 0; i < height; i++)
+    {
+        for (j = 0; j < width; j++)
+        {
+
+            int sumRed = int sumGreen = int sumBlue = int counter = 0
+
+    // CHECK CORNERS
+
+            // top right
+            if (i >= 0 && j <= width)
+                {
+                    sumRed += RGBTRIPLE temp[i-1][j+1];
+                    sumGreen += RGBTRIPLE temp[i-1][j+1];
+                    sumBlue += RGBTRIPLE temp[i-1][j+1];
+                }
+
+            // bottom right
+
+
+
+
+        }
+    }
+
+
 }

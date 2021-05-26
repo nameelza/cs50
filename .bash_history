@@ -498,3 +498,6 @@ make filter
 check50 cs50/problems/2021/x/filter/less
 make filter
 check50 cs50/problems/2021/x/filter/less
+git add .
+git commit -m "filter blur"
+git push -u origin master
