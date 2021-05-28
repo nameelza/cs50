@@ -12,10 +12,30 @@ int main(int argc, char *argv[])
     // open memory card
     FILE *file = fopen(argv[1], "r");
 
+    if (file == NULL)
+    {
+        printf("Could not open file.\n");
+        return 1;
+    }
+
     // repeat until the end of card:
     // read 512 bytes into a buffer
-    ?? buffer;
-    fread(?, 512 bytes, 1, file)
+    int512_t buffer;
+    n = 0;
+    while(fread(&buffer, 512 bytes, 1, file));
+    {
+        if (buffer[0] == 0xff || buffer[1] == 0xd8 || buffer[2] == 0xff || (buffer[3] & 0xf0) == 0xe0)
+        {
+            if (buffer == NULL)
+            {
+                sprintf(filename, "%03i.jpg", n);
+                n += 1;
+                FILE *img = fopen(filename, "w");
+                fwrite(&buffer, 512 bytes, 1, filename)
+            }
+        }
+
+    }
 
     // if start of new jpeg
         // if start of first jpeg

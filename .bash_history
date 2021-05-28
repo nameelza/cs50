@@ -498,3 +498,6 @@ clear
 cd pset4
 cd recover
 clear
+git add .
+git commit -m "recover"
+git push -u origin master
