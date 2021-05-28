@@ -504,3 +504,6 @@ git push -u origin master
 git add .
 git commit -m "recover"
 git push -u origin master
+git add .
+git commit -m "recover"
+git push -u origin master
