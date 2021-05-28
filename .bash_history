@@ -1,85 +1,3 @@
-./caesar 2
-make caesar
-./caesar 2
-make caesar
-./caesar 2
-make caesar
-./caesar 2
-make caesar
-./caesar 2
-make caesar
-./caesar 2
-make caesar
-./caesar 2
-make caesar
-./caesar 2
-check50 cs50/problems/2021/x/caesar
-make caesar
-./caesar 2
-check50 cs50/problems/2021/x/caesar
-style50 caesar.c
-submit50 cs50/problems/2021/x/caesar
-cd
-git add .
-git commit -m "caesar project final"
-git push -u origin master
-git add .
-git commit -m "readability project"
-git push -u origin master
-git add.
-git add .
-git commit -m "readability project start"
-git push -u origin master
-cd pset2/readability
-git add .
-git commit -m "readability start"
-git push -u origin master
-cd pset2/readability
-make readabilty
-make readability
-./readability
-debug50 ./readabilty
-debug50 ./readability
-make readability
-./readability
-make readability
-./readability
-make readability
-./readability
-cd
-git add .
-git commit -m "readability project"
-git push -u origin master
-cd pset2/redability
-cd pset2/readability
-make readability
-./readability
-make readability
-./readability
-make readability
-./readability
-make readability
-./readability
-make readability
-./readability
-make readability
-./readability
-make readability
-./readability
-make readability
-./readability
-make readability
-./readability
-make readability
-./readability
-make readability
-./readability
-make readability
-./readability
-make readability
-./readability
-make readability
-./readability
 make readability
 ./readability
 make readability
@@ -573,3 +491,10 @@ ls
 clear
 make recover
 cd
+git add .
+git commit -m "recover"
+git push -u origin master
+clear
+cd pset4
+cd recover
+clear
