@@ -1,5 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdint.h>
+
+typedef uint8_t BYTE;
 
 int main(int argc, char *argv[])
 {
@@ -15,24 +18,26 @@ int main(int argc, char *argv[])
     if (file == NULL)
     {
         printf("Could not open file.\n");
-        return 1;
+        return 2;
     }
 
     // repeat until the end of card:
     // read 512 bytes into a buffer
-    int512_t buffer;
-    n = 0;
+
+    int n = 0;
     while(fread(&buffer, 512 bytes, 1, file));
     {
         if (buffer[0] == 0xff || buffer[1] == 0xd8 || buffer[2] == 0xff || (buffer[3] & 0xf0) == 0xe0)
         {
-            if (buffer == NULL)
+            if (n != 0)
             {
-                sprintf(filename, "%03i.jpg", n);
-                n += 1;
-                FILE *img = fopen(filename, "w");
-                fwrite(&buffer, 512 bytes, 1, filename)
+                fclose(file);
             }
+            
+            sprintf(filename, "%03i.jpg", n);
+            n += 1;
+            FILE *img = fopen(filename, "w");
+            fwrite(&buffer, 512 bytes, 1, filename)
         }
 
     }
