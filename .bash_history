@@ -507,3 +507,39 @@ git push -u origin master
 git add .
 git commit -m "recover"
 git push -u origin master
+git add .
+git commit -m "recover"
+git push -u origin master
+cd pset4
+cd recover
+make recover
+check50 cs50/problems/2021/x/recover
+make recover
+./recover card.raw
+check50 cs50/problems/2021/x/recover
+make recover
+./recover card.raw
+make recover
+check50 cs50/problems/2021/x/recover
+make recover
+check50 cs50/problems/2021/x/recover
+make recover
+check50 cs50/problems/2021/x/recover
+make recover
+check50 cs50/problems/2021/x/recover
+make recover
+check50 cs50/problems/2021/x/recover
+make recover
+check50 cs50/problems/2021/x/recover
+make recover
+check50 cs50/problems/2021/x/recover
+make recover
+check50 cs50/problems/2021/x/recover
+make recover
+check50 cs50/problems/2021/x/recover
+make recover
+check50 cs50/problems/2021/x/recover
+make recover
+style50 recover.c
+submit50 cs50/problems/2021/x/recover
+cd
