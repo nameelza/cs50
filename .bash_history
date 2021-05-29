@@ -498,3 +498,10 @@ git commit -m "recover final"
 git push -u origin master
 mkdir week5lecture
 cd week5lecture
+git add .
+git commit -m "week5"
+git push -u origin master
+cd week5lecture
+make list
+./list
+cd
