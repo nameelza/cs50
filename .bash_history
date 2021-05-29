@@ -505,3 +505,8 @@ cd week5lecture
 make list
 ./list
 cd
+git add .
+git commit -m "week5"
+git push -u origin master
+cd week5lecture
+cd
