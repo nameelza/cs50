@@ -1,53 +1,3 @@
-make readability
-./readability
-make readability
-./readability
-make readability
-./readability
-make readability
-./readability
-make readability
-./readability
-check50 cs50/problems/2021/x/readability
-style50 readability.c
-submit50 cs50/problems/2021/x/readability
-cd
-git add .
-git commit -m "readability final"
-git push -u origin master
-git add .
-git commit -m "substitution start"
-git push -u origin master
-cd pset2
-cd substitution
-make substitutiom
-make substitution
-./substitution dg
-make substitution
-./substitution dg
-make substitution
-./substitution ajfkghtjrydhfyturoyudhfjgy
-./substitution dg4
-ehfjgythgjfydhgjfkdhfjgut5
-./substitution ajfkghtjrydhfyturoyudhfjg6
-make substitution
-./substitution ajfkghtjrydhfyturoyudhfjgd
-make substitution
-./substitution ajfkghtjrydhfyturoyudhfjgd
-make substitution
-./substitution ajfkghtjrydhfyturoyudhfjgd
-make substitution
-./substitution ajfkghtjrydhfyturoyudhfjgd
-make substitution
-./substitution ajfkghtjrydhfyturoyudhfjgd
-make substitution
-./substitution ajfkghtjrydhfyturoyudhfjgd
-make substitution
-./substitution VCHPRZGJNTLSKFBDQWAXEUYMOI
-make substitution
-cd 
-git add .
-git commit -m "substitution"
 git push -u origin master
 cd pset2/substitution
 make substitution
@@ -543,3 +493,8 @@ make recover
 style50 recover.c
 submit50 cs50/problems/2021/x/recover
 cd
+git add .
+git commit -m "recover final"
+git push -u origin master
+mkdir week5lecture
+cd week5lecture
