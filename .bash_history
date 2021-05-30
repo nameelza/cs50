@@ -498,3 +498,7 @@ cd pset5
 mkdir lab5
 cd lab5
 wget https://cdn.cs50.net/2020/fall/labs/5/inheritance.c
+git add .
+git commit -m "lab5"
+git push -u origin master
+check50 cs50/labs/2021/x/inheritance
