@@ -1,23 +1,3 @@
-git push -u origin master
-cd pset2/substitution
-make substitution
-cd pset2/substitution
-make substitution
-./substitution VCHPRZGJNTLSKFBDQWAXEUYMOI
-make substitution
-./substitution VCHPRZGJNTLSKFBDQWAXEUYMOI
-make substitution
-./substitution VCHPRZGJNTLSKFBDQWAXEUYMOI
-make substitution
-./substitution VCHPRZGJNTLSKFBDQWAXEUYMOI
-check50 cs50/problems/2021/x/substitution
-style50 substitution.c
-submit50 cs50/problems/2021/x/substitution
-cd
-git add .
-git commit -m "substituition final"
-git push -u origin master
-cd week3lecture
 make phonebook
 ./phonebook
 make phonebook
@@ -510,3 +490,11 @@ git commit -m "week5"
 git push -u origin master
 cd week5lecture
 cd
+git add .
+git commit -m "week5"
+git push -u origin master
+mkdir pset5
+cd pset5
+mkdir lab5
+cd lab5
+wget https://cdn.cs50.net/2020/fall/labs/5/inheritance.c
