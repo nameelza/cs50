@@ -22,28 +22,58 @@ node *table[N];
 bool check(const char *word)
 {
     // TODO
-    return false;
+    
+
+   
 }
 
 // Hashes word to a number
 unsigned int hash(const char *word)
 {
     // TODO
-    return 0;
+    N = 25;
+    int count = 0;
+    for (int i; i < n; i++)
+    {
+        int a = word[0] - 'a';
+        h(n)->a;
+        count++;
+
+    }
 }
 
 // Loads dictionary into memory, returning true if successful, else false
 bool load(const char *dictionary)
 {
     // TODO
-    return false;
+    FILE *file = fopen(dictionary, "r");
+
+    if (file == NULL)
+    {
+        printf("Could not open file.\n");
+        return false;
+    }
+    
+    while (fscanf(file, "%s", word) != EOF)
+    {
+        fscanf(file, "%s", word);
+
+        node *n = malloc(sizeof(node));
+        if (n == NULL)
+        {
+            return 2;
+        }
+        strcpy(n; word);
+    }
+    return true;
 }
 
 // Returns number of words in dictionary if loaded, else 0 if not yet loaded
 unsigned int size(void)
 {
     // TODO
-    return 0;
+    hash(const char *word);
+    return count;
 }
 
 // Unloads dictionary from memory, returning true if successful, else false

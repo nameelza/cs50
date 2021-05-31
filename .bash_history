@@ -1,6 +1,3 @@
-make runoff
-clear
-make runoff
 clear
 make runoff
 ./runoff Alice Bob Anna
@@ -498,3 +495,7 @@ unzip speller.zip
 cd ..
 cd speller
 ls
+git add .
+git commit -m "speller"
+git push -u origin master
+git add .
