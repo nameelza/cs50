@@ -1,11 +1,3 @@
-git commit -m "runoff"
-git push -u origin master
-cd pset3
-cd runoff
-clear
-make runoff
-clear
-make runoff
 check50 cs50/problems/2021/x/runoff
 make runoff
 help50 make runoff
@@ -499,3 +491,10 @@ git add .
 git commit -m "speller"
 git push -u origin master
 git add .
+git commit -m "speller"
+git push -u origin master
+cd pset5
+cd speller
+mak
+e
+make

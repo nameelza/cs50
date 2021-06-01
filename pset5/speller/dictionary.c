@@ -1,6 +1,10 @@
 // Implements a dictionary's functionality
-
+#include <stdio.h>
+#include <ctype.h>
 #include <stdbool.h>
+#include <strings.h>
+#include <stdlib.h>
+#include <string.h>
 
 #include "dictionary.h"
 
@@ -24,11 +28,11 @@ bool check(const char *word)
     // TODO
     int index = hash(word);
 
-    node *cursor = table[index]
+    node *cursor = table[index];
 
     while (cursor != NULL)
     {
-        if (strcasecmp(cursor->word; word) == 0)
+        if (strcasecmp(cursor->word, word) == 0)
         {
             return true;
         }
@@ -45,11 +49,11 @@ unsigned int hash(const char *word)
 
     for (int i = 0; word[i] != '\0'; i++)
     {
-        if (isalpha(word[i]) || )
+        if (isalpha(word[i]))
         {
-            return true
+            return true;
         }
-        int a = word[0] - 'a';
+        a = word[0] - 'a';
         return a;
     }
 }
@@ -66,21 +70,24 @@ bool load(const char *dictionary)
         printf("Could not open file.\n");
         return false;
     }
-    int count = 0;
-    while (fscanf(file, "%s", word) != EOF)
+    
+    char words[LENGTH + 1];
+    
+    while (fscanf(file, "%s", words) != EOF)
     {
-        fscanf(file, "%s", word);
+        fscanf(file, "%s", words);
 
         node *n = malloc(sizeof(node));
         if (n == NULL)
         {
             return 2;
         }
-        strcpy(n; word);
+        
+        strcpy(n->word, words);
         n->next = NULL;
-        int index = hash(word);
+        int index = hash(words);
 
-        if (table[index] = NULL)
+        if (table[index] == NULL)
         {
             table[index] = n;
         }
@@ -90,6 +97,7 @@ bool load(const char *dictionary)
         }
         count++;
     }
+    fclose(file);
     return true;
 }
 
@@ -97,16 +105,22 @@ bool load(const char *dictionary)
 unsigned int size(void)
 {
     // TODO
-    hash(const char *word);
-    return count;
+    if (count > 0)
+    {
+        return count;
+    }
+    else
+    {
+        return 0;
+    }
+    
 }
 
 // Unloads dictionary from memory, returning true if successful, else false
 bool unload(void)
 {
     // TODO
-
-    for (i = 0; i < N; i++)
+    for (int i = 0; i < N; i++)
     {
         while (table[i] != NULL)
         {
