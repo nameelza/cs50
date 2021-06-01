@@ -1,9 +1,3 @@
-clear
-make runoff
-./runoff Alice Bob Anna
-make runoff
-cd 
-git add .
 git commit -m "runoff"
 git push -u origin master
 cd pset3
@@ -501,3 +495,7 @@ git push -u origin master
 git add .
 git commit -m "speller"
 git push -u origin master
+git add .
+git commit -m "speller"
+git push -u origin master
+git add .

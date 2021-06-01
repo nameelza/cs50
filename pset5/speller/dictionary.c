@@ -22,23 +22,35 @@ node *table[N];
 bool check(const char *word)
 {
     // TODO
+    int index = hash(word);
 
+    node *cursor = table[index]
 
+    while (cursor != NULL)
+    {
+        if (strcasecmp(cursor->word; word) == 0)
+        {
+            return true;
+        }
+        cursor->word->next;
+    }
+    return false;
 }
 
 // Hashes word to a number
 unsigned int hash(const char *word)
 {
     // TODO
-    int count = 0;
     int a;
 
     for (int i = 0; word[i] != '\0'; i++)
     {
         if (isalpha(word[i]) || )
+        {
+            return true
+        }
         int a = word[0] - 'a';
         return a;
-        count++;
     }
 }
 
@@ -54,7 +66,7 @@ bool load(const char *dictionary)
         printf("Could not open file.\n");
         return false;
     }
-
+    int count = 0;
     while (fscanf(file, "%s", word) != EOF)
     {
         fscanf(file, "%s", word);
@@ -68,7 +80,15 @@ bool load(const char *dictionary)
         n->next = NULL;
         int index = hash(word);
 
-        n->next = table[index];
+        if (table[index] = NULL)
+        {
+            table[index] = n;
+        }
+        else
+        {
+            table[index] = n->next;
+        }
+        count++;
     }
     return true;
 }
@@ -85,5 +105,15 @@ unsigned int size(void)
 bool unload(void)
 {
     // TODO
-    return false;
+
+    for (i = 0; i < N; i++)
+    {
+        while (table[i] != NULL)
+        {
+            node *tmp = table[i]->next;
+            free(table[i]);
+            table[i] = tmp;
+        }
+    }
+    return true;
 }
