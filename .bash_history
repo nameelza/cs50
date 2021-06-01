@@ -498,3 +498,26 @@ check50 cs50/problems/2021/x/speller
 make
 check50 cs50/problems/2021/x/speller
 make
+git add .
+git commit -m "speller"
+git push -u origin master
+cd pset5/speller
+make
+check50 cs50/problems/2021/x/speller
+make
+check50 cs50/problems/2021/x/speller
+style50 dictionary.c
+make
+$ ./speller texts/lalaland.txt > student.txt
+$ ~cs50/2019/fall/pset5/speller texts/lalaland.txt > staff.txt
+diff -y student.txt staff.txt
+./speller texts/lalaland.txt
+~cs50/2019/fall/pset5/speller texts/lalaland.txt
+./speller texts/lalaland.txt
+./speller texts/lalaland.txt > student.txt
+~cs50/2019/fall/pset5/speller texts/lalaland.txt > staff.txt
+./speller texts/lalaland.txt > student.txt
+make
+./speller texts/lalaland.txt > student.txt
+submit50 cs50/problems/2021/x/speller
+cd

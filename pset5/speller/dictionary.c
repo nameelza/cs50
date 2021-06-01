@@ -24,12 +24,13 @@ const unsigned int N = 10000;
 node *table[N];
 
 unsigned int count;
+unsigned int hash_value;
 
 // Returns true if word is in dictionary, else false
 bool check(const char *word)
 {
     // TODO
-    int hash_value = hash(word);
+    hash_value = hash(word);
     node *cursor = table[hash_value];
 
     while (cursor != NULL)
@@ -40,7 +41,7 @@ bool check(const char *word)
         }
         cursor = cursor->next;
     }
-return false;
+    return false;
 }
 
 // Hashes word to a number
@@ -81,16 +82,17 @@ bool load(const char *dictionary)
         }
         
         strcpy(n->word, word);
+        
         // Hash the word to get hash value
-        int hash_value = hash(word);
+        hash_value = hash(word);
         // Set new pointer
         n->next = table[hash_value];
         // Set head to new pointer
         table[hash_value] = n;
-        // Increment word count
+        
         count++;
     }
-    return count;
+    fclose(file);
     return true;
 }
 
@@ -115,9 +117,9 @@ bool unload(void)
     // Iterate through buckets
     for (int i = 0; i < N; i++)
     {
-        // Set cursor to this each bucket location
+        // Set cursor to bucket location i
         node *cursor = table[i];
-// If cursor is not NULL, free
+        
         while (cursor != NULL)
         {
             // Create temp
@@ -127,8 +129,8 @@ bool unload(void)
             // Free up temp
             free(tmp);
         }
-// If cursor is NULL
-        if (cursor == NULL)
+      
+        if (i == N - 1 && cursor == NULL)
         {
             return true;
         }
