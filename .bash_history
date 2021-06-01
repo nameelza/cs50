@@ -1,43 +1,3 @@
-mkdir tideman
-cd tideman
-wget https://cdn.cs50.net/2020/fall/psets/3/tideman/tideman.c
-cd pset3/plurality
-make pluralitu
-make plurality
-clear
-cd pset3
-cd pset3/tideman
-cd
-cd pset3
-cd tideman
-mkdir week4lecture
-cd week4lecture
-cd
-git add .
-git commit -m "lecture"
-git push -u origin master
-cd pset3
-cd lab3
-submit50 cs50/labs/2021/x/sort
-clear
-cd week4lecture
-make adress
-make address
-./address
-make address
-./address
-cd
-git add .
-git commit -m "address"
-git push -u origin master
-cd week4lecture
-make address
-./address
-make address
-./address
-make address
-./address
-cd
 git add .
 git commit -m "address"
 git push -u origin master
@@ -498,3 +458,43 @@ make
 check50 cs50/problems/2021/x/speller
 make
 check50 cs50/problems/2021/x/speller
+git add .
+git commit -m "speller"
+git push -u origin master
+cd pset5
+cd speller
+make
+check50 cs50/problems/2021/x/speller
+make
+check50 cs50/problems/2021/x/speller
+make
+check50 cs50/problems/2021/x/speller
+make
+check50 cs50/problems/2021/x/speller
+make
+check50 cs50/problems/2021/x/speller
+make
+check50 cs50/problems/2021/x/speller
+make
+check50 cs50/problems/2021/x/speller
+make
+check50 cs50/problems/2021/x/speller
+make
+check50 cs50/problems/2021/x/speller
+make
+check50 cs50/problems/2021/x/speller
+make
+check50 cs50/problems/2021/x/speller
+make
+check50 cs50/problems/2021/x/speller
+make
+check50 cs50/problems/2021/x/speller
+make
+check50 cs50/problems/2021/x/speller
+valgrind nake
+valgrind make
+make
+check50 cs50/problems/2021/x/speller
+make
+check50 cs50/problems/2021/x/speller
+make

@@ -5,6 +5,7 @@
 #include <strings.h>
 #include <stdlib.h>
 #include <string.h>
+#include <cs50.h>
 
 #include "dictionary.h"
 
@@ -17,39 +18,29 @@ typedef struct node
 node;
 
 // Number of buckets in hash table
-const unsigned int N = 26;
+const unsigned int N = 10000;
 
 // Hash table
 node *table[N];
 
-int count = 0;
+unsigned int count;
 
 // Returns true if word is in dictionary, else false
 bool check(const char *word)
 {
     // TODO
-    int index = hash(word);
-    char lower[LENGTH+1];
-    
-    for (int i = 0, l = strlen(word); i < l; i++) 
-    {
-        lower[i] = tolower(word[i]);
-    }
-    
-    int lower_index = hash(lower);
-    node *new = table[lower_index];
-    
-    node *cursor = table[lower_index];
+    int hash_value = hash(word);
+    node *cursor = table[hash_value];
 
     while (cursor != NULL)
     {
-        if (strcasecmp(cursor->word, lower) == 0)
+        if (strcasecmp(word, cursor->word) == 0)
         {
             return true;
         }
         cursor = cursor->next;
     }
-    return false;
+return false;
 }
 
 // Hashes word to a number
@@ -57,12 +48,13 @@ unsigned int hash(const char *word)
 {
     // TODO
     // This hash function adds the ASCII values of all characters in the word together
-    long sum = 0;
-    for (int i = 0; i < strlen(word); i++)
+    unsigned long hash = 5381;
+    int c;
+    while ((c = toupper(*word++)))
     {
-        sum += tolower(word[i]);
+        hash = ((hash << 5) + hash) + c; /* hash * 33 + c */
     }
-    return sum % N;
+    return hash % N;
 }
 
 // Loads dictionary into memory, returning true if successful, else false
@@ -77,32 +69,25 @@ bool load(const char *dictionary)
         printf("Could not open file.\n");
         return false;
     }
-    
-    char buffer[LENGTH + 1];
-    
-    while (fscanf(file, "%s", buffer) != EOF)
-    {
-        fscanf(file, "%s", buffer);
 
+    char word[LENGTH + 1];
+
+    while (fscanf(file, "%s", word) != EOF)
+    {
         node *n = malloc(sizeof(node));
         if (n == NULL)
         {
-            unload();
             return false;
         }
         
-        strcpy(n->word, buffer);
-        n->next = NULL;
-        int index = hash(buffer);
-
-        if (table[index] == NULL)
-        {
-            table[index] = n;
-        }
-        else
-        {
-            table[index] = n->next;
-        }
+        strcpy(n->word, word);
+        // Hash the word to get hash value
+        int hash_value = hash(word);
+        // Set new pointer
+        n->next = table[hash_value];
+        // Set head to new pointer
+        table[hash_value] = n;
+        // Increment word count
         count++;
     }
     return count;
@@ -121,31 +106,33 @@ unsigned int size(void)
     {
         return 0;
     }
-    
+
 }
 
 // Unloads dictionary from memory, returning true if successful, else false
 bool unload(void)
 {
-    // TODO
+    // Iterate through buckets
     for (int i = 0; i < N; i++)
     {
-        while (table[i] != NULL)
+        // Set cursor to this each bucket location
+        node *cursor = table[i];
+// If cursor is not NULL, free
+        while (cursor != NULL)
         {
-            node *tmp = table[i]->next;
-            free(table[i]);
-            table[i] = tmp;
+            // Create temp
+            node *tmp = cursor;
+            // Move cursor to next node
+            cursor = cursor->next;
+            // Free up temp
+            free(tmp);
+        }
+// If cursor is NULL
+        if (cursor == NULL)
+        {
+            return true;
         }
     }
-    return true;
+    return false;
 }
 
-
-
-    // for (int i = 0; word[i] != '\0'; i++)
-    // {
-    //     if (isalpha(word[i]))
-    //     {
-    //         return true;
-    //     }
-    // }
