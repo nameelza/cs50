@@ -22,21 +22,32 @@ const unsigned int N = 26;
 // Hash table
 node *table[N];
 
+int count = 0;
+
 // Returns true if word is in dictionary, else false
 bool check(const char *word)
 {
     // TODO
     int index = hash(word);
-
-    node *cursor = table[index];
+    char lower[LENGTH+1];
+    
+    for (int i = 0, l = strlen(word); i < l; i++) 
+    {
+        lower[i] = tolower(word[i]);
+    }
+    
+    int lower_index = hash(lower);
+    node *new = table[lower_index];
+    
+    node *cursor = table[lower_index];
 
     while (cursor != NULL)
     {
-        if (strcasecmp(cursor->word, word) == 0)
+        if (strcasecmp(cursor->word, lower) == 0)
         {
             return true;
         }
-        cursor->word->next;
+        cursor = cursor->next;
     }
     return false;
 }
@@ -45,17 +56,13 @@ bool check(const char *word)
 unsigned int hash(const char *word)
 {
     // TODO
-    int a;
-
-    for (int i = 0; word[i] != '\0'; i++)
+    // This hash function adds the ASCII values of all characters in the word together
+    long sum = 0;
+    for (int i = 0; i < strlen(word); i++)
     {
-        if (isalpha(word[i]))
-        {
-            return true;
-        }
-        a = word[0] - 'a';
-        return a;
+        sum += tolower(word[i]);
     }
+    return sum % N;
 }
 
 // Loads dictionary into memory, returning true if successful, else false
@@ -71,21 +78,22 @@ bool load(const char *dictionary)
         return false;
     }
     
-    char words[LENGTH + 1];
+    char buffer[LENGTH + 1];
     
-    while (fscanf(file, "%s", words) != EOF)
+    while (fscanf(file, "%s", buffer) != EOF)
     {
-        fscanf(file, "%s", words);
+        fscanf(file, "%s", buffer);
 
         node *n = malloc(sizeof(node));
         if (n == NULL)
         {
-            return 2;
+            unload();
+            return false;
         }
         
-        strcpy(n->word, words);
+        strcpy(n->word, buffer);
         n->next = NULL;
-        int index = hash(words);
+        int index = hash(buffer);
 
         if (table[index] == NULL)
         {
@@ -97,7 +105,7 @@ bool load(const char *dictionary)
         }
         count++;
     }
-    fclose(file);
+    return count;
     return true;
 }
 
@@ -131,3 +139,13 @@ bool unload(void)
     }
     return true;
 }
+
+
+
+    // for (int i = 0; word[i] != '\0'; i++)
+    // {
+    //     if (isalpha(word[i]))
+    //     {
+    //         return true;
+    //     }
+    // }

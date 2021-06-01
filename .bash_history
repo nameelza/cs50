@@ -1,28 +1,3 @@
-check50 cs50/problems/2021/x/runoff
-make runoff
-help50 make runoff
-make runoff
-check50 cs50/problems/2021/x/runoff
-make runoff
-check50 cs50/problems/2021/x/runoff
-make runoff
-check50 cs50/problems/2021/x/runoff
-make runoff
-check50 cs50/problems/2021/x/runoff
-make runoff
-clear
-check50 cs50/problems/2021/x/runoff
-make runoff
-check50 cs50/problems/2021/x/runoff
-make runoff
-check50 cs50/problems/2021/x/runoff
-style50 runoff.c
-submit50 cs50/problems/2021/x/runoff
-cd
-git add .
-git commit -m "runoff final"
-git push -u origin master
-cd pset3
 mkdir tideman
 cd tideman
 wget https://cdn.cs50.net/2020/fall/psets/3/tideman/tideman.c
@@ -498,3 +473,28 @@ cd speller
 mak
 e
 make
+git add .
+git commit -m "speller"
+git push -u origin master
+cd pset5/speller
+make
+help50 make
+make
+check50 cs50/problems/2021/x/speller
+make
+check50 cs50/problems/2021/x/speller
+make
+check50 cs50/problems/2021/x/speller
+make
+check50 cs50/problems/2021/x/speller
+make
+check50 cs50/problems/2021/x/speller
+makw
+make
+check50 cs50/problems/2021/x/speller
+make
+help50 make
+make
+check50 cs50/problems/2021/x/speller
+make
+check50 cs50/problems/2021/x/speller
