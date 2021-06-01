@@ -499,3 +499,5 @@ git add .
 git commit -m "speller"
 git push -u origin master
 git add .
+git commit -m "speller"
+git push -u origin master

@@ -13,7 +13,7 @@ typedef struct node
 node;
 
 // Number of buckets in hash table
-const unsigned int N = 1;
+const unsigned int N = 26;
 
 // Hash table
 node *table[N];
@@ -22,23 +22,23 @@ node *table[N];
 bool check(const char *word)
 {
     // TODO
-    
 
-   
+
 }
 
 // Hashes word to a number
 unsigned int hash(const char *word)
 {
     // TODO
-    N = 25;
     int count = 0;
-    for (int i; i < n; i++)
-    {
-        int a = word[0] - 'a';
-        h(n)->a;
-        count++;
+    int a;
 
+    for (int i = 0; word[i] != '\0'; i++)
+    {
+        if (isalpha(word[i]) || )
+        int a = word[0] - 'a';
+        return a;
+        count++;
     }
 }
 
@@ -46,6 +46,7 @@ unsigned int hash(const char *word)
 bool load(const char *dictionary)
 {
     // TODO
+    // open dictionary file
     FILE *file = fopen(dictionary, "r");
 
     if (file == NULL)
@@ -53,7 +54,7 @@ bool load(const char *dictionary)
         printf("Could not open file.\n");
         return false;
     }
-    
+
     while (fscanf(file, "%s", word) != EOF)
     {
         fscanf(file, "%s", word);
@@ -64,6 +65,10 @@ bool load(const char *dictionary)
             return 2;
         }
         strcpy(n; word);
+        n->next = NULL;
+        int index = hash(word);
+
+        n->next = table[index];
     }
     return true;
 }
